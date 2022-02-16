@@ -1,25 +1,27 @@
+/* header part */
+
+
 .money{
     color: #41A372;
 }
 
+
+
+/* input part */
+
+
 .money-field{
     background-color: #d9f2e6;
 }
-/* .money-input{
-    
- /* display: block; */
-  /* margin:0 auto; */
-/* }   */
+
 
 .calc-btn{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* saving part */
 .saving {
     width: 40%;
 }
-/* .save-input{
-    display: flex;
-
-} */
