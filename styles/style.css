@@ -5,3 +5,16 @@
 .money-field{
     background-color: #d9f2e6;
 }
+.Income-input{
+    /* display: flex;
+  align-items: center;
+  justify-content: center; */
+ display: block;
+  margin:0 auto;
+  
+} 
+.calc-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
