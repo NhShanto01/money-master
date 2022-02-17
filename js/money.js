@@ -62,7 +62,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const incomeInput = document.getElementById('income-input');
     const incomeNumber = incomeInput.value;
     incomeInputTotal = parseFloat(incomeNumber);
-    // incomeInput.value = '';
+
 
 
     const savingInput = document.getElementById('save-input');
@@ -76,7 +76,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const savingAmount = document.getElementById('saving-amount');
     const savingAmountText = savingAmount.innerText;
     savingAmountBalance = parseFloat(savingAmountText);
-    // savingInput.value = '';
+
     savingAmount.innerText = incomeInputTotal * savingInputTotal / 100;
 
 
@@ -91,8 +91,47 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const ramainingAmount = document.getElementById('remaining-amount');
     const remainingAmountText = ramainingAmount.innerText;
     remainingTotalAmount = parseFloat(remainingAmountText);
-    // savingInput.value = '';
     ramainingAmount.innerText = balanceTotalAmount - savingAmount.innerText;
 
 });
 
+
+// error massage
+
+function accessValue() {
+    const value1 = document.getElementById('income-input');
+    const value2 = document.getElementById('food-input');
+    const value3 = document.getElementById('rent-input');
+    const value4 = document.getElementById('others-input');
+    const value5 = document.getElementById('save-input');
+    const addAmount = parseFloat(value2) + parseFloat(value3) + parseFloat(value4);
+
+    if (typeof value1, value2, value3, value4, value5 == '') {
+        const errorMsg = document.getElementById('permit-reject');
+        errorMsg.style.display = 'block';
+    }
+    else {
+        const errorMsg1 = document.getElementById('permit-accept');
+        errorMsg1.style.display = 'block';
+
+    }
+
+    if (addAmount > value4) {
+        const errorMsg2 = document.getElementById('low-money');
+        errorMsg2.style.display = 'block';
+    }
+
+
+
+    if (value1, value2, value3, value4, value5 < 0) {
+        const positiveValue = document.getElementById('positive-number');
+        positiveValue.style.display = 'block';
+    }
+
+
+    if (value1, value2, value3, value4, value5 == 'string') {
+        const errorMsgString = document.getElementById('positive-number');
+        errorMsgString.style.display = 'block';
+    }
+
+};

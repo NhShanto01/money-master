@@ -21,7 +21,6 @@
   justify-content: center;
 }
 
-/* saving part */
-.saving {
-    width: 70%;
+.permit{
+    display: none;
 }
